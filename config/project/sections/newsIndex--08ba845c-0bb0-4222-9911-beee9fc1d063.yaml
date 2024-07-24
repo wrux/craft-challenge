@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 63f3a61d-3137-4e16-8661-e9938af5b735 # News (Index)
+handle: newsIndex
+maxAuthors: 1
+name: 'News (Index)'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{uri}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6d75b8bd-5bd0-4d50-8119-9eb798c54cec: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news/index.twig
+    uriFormat: news
+type: single

@@ -1,0 +1,44 @@
+{% cache globally using key "navigation" %}
+    {% set navigation = craft.entries.section('mainNavigation').all() %}
+    {% set navItems = [] %}
+    {% for item in navigation %}
+        {% set navItems = navItems|merge([{
+            title: item.title,
+            href: item.navigationLink
+        }]) %}
+    {% endfor %}
+
+    <header id="site-header" class="bg-white text-black sticky top-0 z-50" x-data="{ menuOpen: false }">
+        <div class="x_container flex justify-between items-center">
+            <a href="/"
+               class="font-bold bg-red-500 text-white uppercase text-xl tracking-[2px] hover:bg-red-500 py-4 px-6">{{ siteName }}</a>
+
+            <div class="flex justify-between items-center gap-4">
+                <!-- Desktop menu -->
+                <nav class="hidden lg:block">
+                    <ul class="flex gap-4">
+                        {% for item in navItems %}
+                            <li>
+                                <a href="{{ item.href }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <button class="lg:hidden" @click="menuOpen = !menuOpen"
+                        x-text="menuOpen ? 'Close' : 'Menu'">Menu
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <nav x-cloak x-show="menuOpen" class="bg-red-500 text-white p-8 mx-4">
+            <ul class="flex flex-col gap-8">
+                {% for item in navItems %}
+                    <li>
+                        <a href="{{ item.href }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+{% endcache %}

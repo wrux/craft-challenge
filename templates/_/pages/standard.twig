@@ -1,0 +1,8 @@
+{% extends '_/layouts/default' %}
+
+{% block content %}
+    <div class="x_container py-12">
+        <h1 class="t_h1 mb-6">{{ entry.title }}</h1>
+        {% include '_/components/content-builder' %}
+    </div>
+{% endblock %}

@@ -1,0 +1,184 @@
+dateModified: 1721815644
+email:
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
+  fromName: 'Starter Craft'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    host: $MAILPIT_SMTP_HOSTNAME
+    password: ''
+    port: $MAILPIT_SMTP_PORT
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  files:
+    hasUrls: true
+    name: Files
+    settings:
+      bucket: $DO_BUCKET
+      contentDisposition: ''
+      endpoint: '@DO_ENDPOINT'
+      expires: ''
+      keyId: $DO_ACCESS_KEY_ID
+      region: $DO_REGION
+      secret: $DO_SECRET_ACCESS_KEY
+      subfolder: '@DO_CLIENT/files'
+    type: vaersaagod\dospaces\Fs
+    url: $DO_BASE_URL
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      bucket: $DO_BUCKET
+      contentDisposition: ''
+      endpoint: '@DO_ENDPOINT'
+      expires: ''
+      keyId: $DO_ACCESS_KEY_ID
+      region: $DO_REGION
+      secret: $DO_SECRET_ACCESS_KEY
+      subfolder: '@DO_CLIENT/images'
+    type: vaersaagod\dospaces\Fs
+    url: $DO_BASE_URL
+meta:
+  __names__:
+    1d464595-40d6-4124-8f33-68f5ff393871: Home # Home
+    04fd4291-19b0-4298-9201-e849a397f311: 'Navigation Item' # Navigation Item
+    6d75b8bd-5bd0-4d50-8119-9eb798c54cec: $SITE_NAME # $SITE_NAME
+    7a210efa-8998-42c4-b5b5-15c23404d021: Files # Files
+    8a6bb61f-9908-4572-ab4e-476bb743b567: Default # Default
+    08ba845c-0bb0-4222-9911-beee9fc1d063: 'News (Index)' # News (Index)
+    8c03424a-5e30-46c3-bdbd-4b6b0c9275e3: Image # Image
+    9a3cf1ba-43c1-405e-b297-82099e00c3f0: 'Starter Craft' # Starter Craft
+    09dd1f7a-1fc7-43f4-a2a1-907d915ada01: 'Standard Page' # Standard Page
+    015a7f41-afaf-4d19-be03-2c27f0a54e18: 'News Post' # News Post
+    38e768b4-29f5-40ac-888f-f7e66285a937: Next.js # Next.js
+    63dd98eb-debb-4277-95f9-0559a1ea807c: Images # Images
+    63f3a61d-3137-4e16-8661-e9938af5b735: 'News (Index)' # News (Index)
+    64c9b1b7-b692-424f-ab53-b2d9b0ad8fa2: Excerpt # Excerpt
+    68bac844-44db-4e32-aa07-38ce94edeebb: SEO # SEO
+    0923cb85-bb21-4fc2-a954-d4dff88b56a7: 'Navigation Link' # Navigation Link
+    2844ccdc-fff8-4bcf-a674-ba376b0955ad: 'Content Builder' # Content Builder
+    6649fddc-98d3-4964-ace5-7a46cfdfac5a: Home # Home
+    7197aa2b-e65a-448d-89ca-71d1b98bdf2d: Images # Images
+    45022a5c-65d7-451b-8c75-7227d05f88ab: Images # Images
+    702527bf-0a0e-4d70-a788-8c12968cb11c: 'Standard Page - Default' # Standard Page - Default
+    bbdb3491-25e4-46d9-b775-74a82d472f3f: Copy # Copy
+    c3deb65d-6a5c-44aa-840e-0850d850f162: Simple # Simple
+    d2537a47-2db1-49d2-84e7-457e5e655a4a: News # News
+    e7732226-0e30-4e0a-b9de-4f50b1b2d59e: 'Public Schema' # Public Schema
+    ebaa4706-86be-4e14-98e1-d551c3d6bade: 'Standard Copy' # Standard Copy
+    f3f7b7c5-a2f2-4503-85a2-81709f0a8ce8: 'Main Navigation' # Main Navigation
+    f6c0b10e-1131-49f6-90c8-cb37bb7192f9: Full # Full
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  classnames:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: RDPN1VFNX5F7T2NP0VXO3ABB
+    schemaVersion: 3.0.12
+    settings:
+      alwaysStripQueryString: false
+      automaticallyTrimStatistics: true
+      createUriChangeRedirects: true
+      csvColumnDelimiter: ','
+      dynamicRedirectDisplayLimit: 100
+      enableApiEndpoint: true
+      enableStatistics: true
+      pluginName: Retour
+      preserveQueryString: false
+      recordRemoteIp: true
+      refreshIntervalSecs: 5
+      staticRedirectDisplayLimit: 100
+      statisticsRateLimitMs: 3600000
+      statsDisplayLimit: 1000
+      statsStoredLimit: 1000
+      stripQueryStringFromStats: true
+      uriChangeRedirectSrcMatch: pathonly
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 52W2M4CQMHQ34EZGDZLB8F4I
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableDebugToolbarPanel: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: $SYSTEM_NAME
+  retryDuration: null
+  schemaVersion: 5.0.0.21
+  timeZone: $CRAFT_TIMEZONE
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

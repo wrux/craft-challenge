@@ -1,0 +1,13 @@
+isPublic: false
+name: Next.js
+scope:
+  - 'sites.6d75b8bd-5bd0-4d50-8119-9eb798c54cec:read' # $SITE_NAME
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'retour.all:read'
+  - 'seomatic.all:read'
+  - 'sections.1d464595-40d6-4124-8f33-68f5ff393871:read' # Home
+  - 'sections.08ba845c-0bb0-4222-9911-beee9fc1d063:read' # News (Index)
+  - 'sections.09dd1f7a-1fc7-43f4-a2a1-907d915ada01:read' # Standard Page
+  - 'sections.d2537a47-2db1-49d2-84e7-457e5e655a4a:read' # News

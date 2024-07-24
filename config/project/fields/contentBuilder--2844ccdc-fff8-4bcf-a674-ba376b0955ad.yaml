@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: contentBuilder
+instructions: null
+name: 'Content Builder'
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - ebaa4706-86be-4e14-98e1-d551c3d6bade # Standard Copy
+    - 63dd98eb-debb-4277-95f9-0559a1ea807c # Images
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

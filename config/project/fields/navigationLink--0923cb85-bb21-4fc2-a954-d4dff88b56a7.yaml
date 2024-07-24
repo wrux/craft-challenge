@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: navigationLink
+instructions: null
+name: 'Navigation Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

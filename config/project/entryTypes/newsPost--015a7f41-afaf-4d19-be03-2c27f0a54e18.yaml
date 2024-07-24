@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  e1a2a4b6-8f47-4a27-a12d-159986ac05dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 480647cd-c58a-4fb6-a682-9a6d2f0d8fd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 64c9b1b7-b692-424f-ab53-b2d9b0ad8fa2 # Excerpt
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94143e6e-fff7-4b11-ac8e-fb5901a06825
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2844ccdc-fff8-4bcf-a674-ba376b0955ad # Content Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ff1b9f4-664b-4e59-b71f-b2a9fd727452
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 00287712-6be4-4a3a-a5d6-97d622e54e41
+        userCondition: null
+handle: newsPost
+hasTitleField: true
+icon: ''
+name: 'News Post'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

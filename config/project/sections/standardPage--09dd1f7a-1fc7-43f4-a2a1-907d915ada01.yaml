@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 702527bf-0a0e-4d70-a788-8c12968cb11c # Standard Page - Default
+handle: standardPage
+maxAuthors: 1
+name: 'Standard Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{uri}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6d75b8bd-5bd0-4d50-8119-9eb798c54cec: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/standard.twig
+    uriFormat: '{parent ? parent.uri ~ ''''/'''' ~ slug : slug}'
+structure:
+  maxLevels: null
+  uid: 6cefb092-2d9b-4e6f-a3ea-9d096ecaa942
+type: structure

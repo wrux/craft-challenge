@@ -1,0 +1,13 @@
+{% if pageInfo.prevUrl or pageInfo.nextUrl %}
+	<div class="mt-4 flex items-center justify-center gap-4">
+		{% if pageInfo.prevUrl %}
+			<a href="{{ pageInfo.prevUrl }}">Previous</a>
+		{% endif %}
+		{% if pageInfo.prevUrl and pageInfo.nextUrl %}
+			<span class="divider">|</span>
+		{% endif %}
+		{% if pageInfo.nextUrl %}
+			<a href="{{ pageInfo.nextUrl }}">Next</a>
+		{% endif %}
+	</div>
+{% endif %}

@@ -1,0 +1,9 @@
+<figure>
+    {% for image in block.images.eagerly().all() %}
+        {% include '_/components/image' with {
+            params: {
+                image: image
+            }
+        } %}
+    {% endfor %}
+</figure>

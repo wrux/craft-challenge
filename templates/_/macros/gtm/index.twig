@@ -1,0 +1,8 @@
+{% macro uiEvent(category, action, label) %}
+    window.dataLayer.push({
+    event: 'ui_event',
+    category: '{{ category }}',
+    action: '{{ action }}',
+    label: '{{ label }}'
+    });
+{% endmacro %}

@@ -1,0 +1,18 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 04fd4291-19b0-4298-9201-e849a397f311 # Navigation Item
+handle: mainNavigation
+maxAuthors: 1
+name: 'Main Navigation'
+propagationMethod: all
+siteSettings:
+  6d75b8bd-5bd0-4d50-8119-9eb798c54cec: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 956ec0d9-714f-42e2-901a-2903ea7c3245
+type: structure

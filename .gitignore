@@ -1,0 +1,14 @@
+.DS_Store
+*.swp
+*.bak
+*.tmp
+*.log
+/.env
+/.idea
+/vendor
+.DS_Store
+/node_modules 
+.ddev/*
+!.ddev/config.yaml
+web/cache/*
+web/dist/*

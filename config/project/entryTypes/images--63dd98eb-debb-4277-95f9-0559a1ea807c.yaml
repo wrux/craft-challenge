@@ -1,0 +1,65 @@
+color: lime
+fieldLayouts:
+  80418973-a9ad-41a5-9d89-86abecd752c5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: df09bca3-2b35-46b9-9b12-5f7a086a34bb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7197aa2b-e65a-448d-89ca-71d1b98bdf2d # Images
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 192979f0-234e-4df8-a681-66774a9f5738
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 196cfd4f-73fc-45a8-8a6a-5c1e0c75cc41
+        userCondition: null
+handle: images
+hasTitleField: false
+icon: image
+name: Images
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

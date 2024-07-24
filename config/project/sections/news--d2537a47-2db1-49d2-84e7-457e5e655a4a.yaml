@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 015a7f41-afaf-4d19-be03-2c27f0a54e18 # News Post
+handle: news
+maxAuthors: 1
+name: News
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{uri}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  6d75b8bd-5bd0-4d50-8119-9eb798c54cec: # $SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news/entry.twig
+    uriFormat: 'news/{slug}'
+type: channel

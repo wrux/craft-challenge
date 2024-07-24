@@ -1,0 +1,34 @@
+{% set defaults = {
+    image: null,
+    width: 1024,
+    height: null,
+    ratio: null,
+    loading: 'lazy',
+    type: 'asset',
+    quality: 75,
+    format: 'webp',
+    class: "w-full h-auto",
+    mode: "crop",
+    sizes: "100vw",
+    srcset: ['2x', '3x'],
+} %}
+{% set params = defaults|merge(params) %}
+
+{% set calculatedHeight = params.height ?? null %}
+{% if params.ratio %}
+    {% set calculatedHeight = (params.width / params.ratio)|round %}
+{% endif %}
+
+{% if params.image %}
+    {% do params.image.setTransform({ width: params.width, height: calculatedHeight, quality: 75, format: params.format, mode: params.mode }) %}
+    {{ tag('img', {
+        src: params.image.url,
+        width: params.image.width,
+        height: params.image.height,
+        srcset: params.image.getSrcset(params.srcset),
+        sizes: params.sizes,
+        alt: params.alt is defined ? params.alt : params.image.alt ?? "",
+        loading: params.loading,
+        class: params.class
+    }) }}
+{% endif %}

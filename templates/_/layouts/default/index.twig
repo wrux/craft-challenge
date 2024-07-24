@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    {% block headEarly %}{% endblock %}
+
+    {# Most meta comes in automatically via SEOMatic #}
+
+
+    {# Don't load HTMX, we do it via our site.js #}
+    {% do sprig.setRegisterScript(false) %}
+    {% if devMode %}
+        {{ craft.vite.script("src/js/site.js") }}
+    {% else %}
+        {{ craft.vite.script("src/js/site.js", false) }}
+        {{ craft.vite.asset("src/css/site.css") }}
+    {% endif %}
+
+    {# Fonts #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# Add the news RSS feed (/news/rss) meta #}
+    <link rel="alternate" type="application/rss+xml" title="News RSS Feed" href="/news/rss">
+
+    {# Favicons #}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+
+    {% block headLate %}{% endblock %}
+</head>
+<body class="bg-gray-100">
+{% block bodyEarly %}{% endblock %}
+<div class="min-h-screen flex flex-col">
+    <div class="flex-1">
+        {% include '_/components/site-header' %}
+        {% block content %}{% endblock %}
+    </div>
+</div>
+
+{% block bodyLate %}{% endblock %}
+</body>
+</html>

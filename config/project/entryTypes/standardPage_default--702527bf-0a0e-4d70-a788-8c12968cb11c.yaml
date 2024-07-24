@@ -1,0 +1,76 @@
+fieldLayouts:
+  8fa6f370-9ae7-4bf2-b4d7-a47908a6a3d4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: df965712-58bb-4925-8b94-5f7261d68243
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2844ccdc-fff8-4bcf-a674-ba376b0955ad # Content Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf05abb5-000f-4dba-9392-e3ab882640cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3c03e509-f303-4e05-8164-291fed127e1e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 68bac844-44db-4e32-aa07-38ce94edeebb # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 090a0388-48ca-4d7b-b399-0c5705afbda5
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: ed4718de-d47c-4e6f-ac29-5f87a893d4a4
+        userCondition: null
+handle: standardPage_default
+hasTitleField: true
+name: 'Standard Page - Default'
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
