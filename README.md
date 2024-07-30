@@ -4,6 +4,7 @@
 
 - [ ] Add an RSS feed for the news section
 - [ ] Add a new block to the content builder matrix field to support YouTube videos. They should input a YouTube ID in the CMS. Update the frontend to output that YouTube embed with a responsive (16:9 ratio) video player.
+- [ ] Update Tailwind to have the Tailwind containers plugin installed, and set it so once the container is 600px wide, the H1 on the homepage becomes the serif font stack.
 
 ## Installing
 
