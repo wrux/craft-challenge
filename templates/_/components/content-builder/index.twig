@@ -1,12 +1,12 @@
 {% set contentBlocks = entry.contentBuilder.all() %}
 
 {% if contentBlocks|length %}
-    <section class="c_content-builder">
+    <div class="c_content-builder">
         {% for block in contentBlocks %}
             {% set blockName = block.type.handle %}
             {% include "_/components/content-builder/blocks/" ~ blockName ignore missing with {
                 'block' : block
             } %}
         {% endfor %}
-    </section>
+    </div>
 {% endif %}
