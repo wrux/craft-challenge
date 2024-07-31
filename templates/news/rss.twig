@@ -1,0 +1,25 @@
+{% header "Content-Type: application/rss+xml" %}
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <language>{{ craft.app.language }}</language>
+    <pubDate>{{ now|rss }}</pubDate>
+    <lastBuildDate>{{ now|rss }}</lastBuildDate>
+    <title>{{ siteName }}</title>
+    <description>Test news feed</description>
+    <link>{{ siteUrl }}</link>
+    <atom:link href="{{ craft.app.request.absoluteUrl }}" rel="self" type="application/rss+xml" />
+    {% for entry in craft.entries.section('news').all -%}
+    <item>
+      <title>{{ entry.title }}</title>
+      <link>{{ entry.url }}</link>
+      <description>{{ entry.excerpt }}</description>
+      <pubDate>{{ entry.postDate|rss }}</pubDate>
+      <author>
+        {{- entry.author.email }}{{ entry.author.fullName ? ' (' ~ entry.author.fullName ~ ')' : '' -}}
+      </author>
+      <guid>{{ entry.url }}</guid>
+    </item>
+  {% endfor %}
+</channel>
+</rss>
