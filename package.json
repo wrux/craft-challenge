@@ -15,6 +15,7 @@
   "dependencies": {
     "@alpinejs/collapse": "^3.14.1",
     "@alpinejs/focus": "^3.14.1",
+    "@tailwindcss/container-queries": "^0.1.1",
     "alpinejs": "^3.14.1",
     "htmx.org": "^2.0.1"
   }
