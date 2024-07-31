@@ -1,4 +1,4 @@
-dateModified: 1721815644
+dateModified: 1722445376
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: 'Starter Craft'
@@ -42,6 +42,7 @@ fs:
     url: $DO_BASE_URL
 meta:
   __names__:
+    01d733bf-a346-483a-9ba2-1cce0f886a51: Caption # Caption
     1d464595-40d6-4124-8f33-68f5ff393871: Home # Home
     04fd4291-19b0-4298-9201-e849a397f311: 'Navigation Item' # Navigation Item
     6d75b8bd-5bd0-4d50-8119-9eb798c54cec: $SITE_NAME # $SITE_NAME
@@ -68,8 +69,10 @@ meta:
     d2537a47-2db1-49d2-84e7-457e5e655a4a: News # News
     e7732226-0e30-4e0a-b9de-4f50b1b2d59e: 'Public Schema' # Public Schema
     ebaa4706-86be-4e14-98e1-d551c3d6bade: 'Standard Copy' # Standard Copy
+    f0acbfff-6b9e-4817-9f2c-7181d9a26493: 'Video ID' # Video ID
     f3f7b7c5-a2f2-4503-85a2-81709f0a8ce8: 'Main Navigation' # Main Navigation
     f6c0b10e-1131-49f6-90c8-cb37bb7192f9: Full # Full
+    ffa917d1-2930-4060-b630-2a41a13a6af2: 'Youtube Video' # Youtube Video
 plugins:
   ckeditor:
     edition: standard

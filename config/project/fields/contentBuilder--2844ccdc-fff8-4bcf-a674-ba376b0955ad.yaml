@@ -8,6 +8,7 @@ settings:
   entryTypes:
     - ebaa4706-86be-4e14-98e1-d551c3d6bade # Standard Copy
     - 63dd98eb-debb-4277-95f9-0559a1ea807c # Images
+    - ffa917d1-2930-4060-b630-2a41a13a6af2 # Youtube Video
   includeTableView: false
   maxEntries: null
   minEntries: null
